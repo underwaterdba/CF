@@ -11,6 +11,6 @@ netsh.exe advfirewall set allprofiles state off
 #Set-DnsClientServerAddress -InterfaceIndex 12 -ServerAddresses ("10.79.2.10","10.79.2.11")
 
 #Add-Computer -DomainName MYLAB.Local -ComputerName TARGETCOMPUTER -newname NewTARGETCOMPUTER
-Rename-Computer -NewName "Server044" 
+Rename-Computer -NewName $NewName -force -restart
 
-restart-computer -force
+
